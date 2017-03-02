@@ -1,0 +1,595 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    clear: both;
+}
+
+.col-1 {
+	width: 8.33%;
+}	
+
+.col-2 {
+	width: 16.66%;
+}	
+
+.col-3 {
+	width: 25%;
+	float: left;
+	overflow: hidden;
+}	
+
+.col-4 {
+	width: 33.33%;
+	float: left;
+	position: relative; 
+}
+
+.col-5 {
+	width: 41.66%;
+}
+	
+.col-6 {
+	width: 50%;
+}
+	
+.col-7 {
+	width: 58.33%;
+}
+	
+.col-8 {
+	width: 66.66%;
+}
+	
+.col-9 {
+	width: 75%;
+}
+	
+.col-10 {
+	width: 83.33%;
+}
+	
+.col-11 {
+	width: 91.66%;
+}
+	
+.col-12 {
+	width: 100%;
+}
+
+.col-offset-1 {
+	margin-left: 8.33%;
+}
+	
+.col-offset-2 {
+	margin-left: 16.66%;
+}
+	
+.col-offset-3 {
+	margin-left: 25%;
+}
+	
+.col-offset-4 {
+	margin-left: 33.33%;
+}
+	
+.col-offset-5 {
+	margin-left: 41.66%;
+}
+	
+.col-offset-6 {
+	margin-left: 50%;
+	}
+	
+.col-offset-7 {
+	margin-left: 58.33%;
+}
+	
+.col-offset-8 {
+	margin-left: 66.66%;
+}
+	
+.col-offset-9 {
+	margin-left: 75%;
+}
+	
+.col-offset-10 {
+	margin-left: 83.33%;
+}
+	
+.col-offset-11 {
+	margin-left: 91.66%;
+}
+	
+.col-offset-12 {
+	margin-left: 100%;
+}
+
+header {
+  background-color: #009999;
+  height: 100px;  
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header > nav img {
+  padding: 10px 0;
+}
+
+header > nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header > nav ul > li {
+  display:inline-block;
+}
+
+header > nav ul > li > a {
+  line-height: 60px;
+  display: block;
+  color: #fff;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header > nav ul > li > a:hover {
+  background: #66CCCC;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding: 12px;
+		
+}
+/*** HERO ***/
+.hero {
+	background-image: url('http://www.desktopimages.org/pictures/2015/0526/1/orig_86726.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+}
+
+.btn {
+	color: #fff;
+    background-color: #eee;
+    border-color: #fed136;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;	
+	position: relative;
+    top: 120px;
+    left: 174px;
+}
+
+.active {
+  background: white;
+}
+
+
+section>.container {
+	margin: 50px auto;
+}
+
+.brand {
+	text-align: center;
+}
+.brand img{
+	opacity: 0.3;
+}
+.brand img:hover {
+	opacity: 1;	
+    transition: 0.6s;	
+}
+.slogan {
+	float: right;
+	margin-top: 120px;
+	background-color: rgba(49,51,50,0.75);
+	padding: 20px;
+}
+.slogan h1 {
+	margin: 0;
+	font-size: 35px;
+	color: white; 
+}
+
+/*** HEADER2 ***/
+
+.header2 {
+	background: #669999;
+}
+
+.about h2 {
+	text-transform: uppercase;
+	color: white;
+	font-size: 32px;
+	font-weight: 900;
+	text-align: center;
+
+}
+
+.about p {
+	text-align: center;
+	font-size: 21px; 
+	color: white; 
+	font-style: italic; 
+}
+
+/*** GALLERY ***/
+
+.gallery {
+	margin-top: 0px;
+	position: relative;  
+	overflow: hidden;
+}
+
+.photo1 {
+	 background-image: url("http://www.huhmagazine.co.uk/images/uploaded/index/gopro_yearinreview_index.jpg");
+}
+
+.photo2 {
+	background-image: url("http://tecnologiaynoticias.info/wp-content/plugins/rss-poster/cache/3d8e6_Accesorios-GoPro.jpg");	
+}
+	
+.photo3 {
+	 background-image: url("http://www.goodlifereport.com/wp-content/uploads/2015/07/CHDHS-101_life3.jpg");
+}
+.photo4 {
+	 background-image: url("https://www.expert.no/media/5050/818279010954_gopro_3-waymount_1.jpg");
+}
+
+.photo5 {
+	 background-image: url("http://zdnet4.cbsistatic.com/hub/i/r/2014/12/04/a21baf34-7b6a-11e4-9a74-d4ae52e95e57/resize/770xauto/0e1a50b08ae4bfaff4addadd9cc78fe4/gopro-flies-towards-consumer-drone-market.jpg");
+}
+
+.photo6 {
+	 background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQq3xzDelrAgIFHr2DOlnPVfaXUr9W4gxHwwjzFEsX9r0JQKP2");
+}
+
+.photo7 {
+	 background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnfF0sDMlEoiDakxOwBzrkdgEE6d6K9wiX8lCMM8Q6jfRX9Bzb");
+}
+
+.photo8 {
+	background-image: url("http://lareclame.fr/wp-content/uploads/2015/12/musique-gopro-800x449.jpg");
+}
+
+.photo {
+	max-width: 100%;  
+	transition: all 0.3s;
+	height: 300px;
+	background-size: cover;
+}
+
+.layer {
+	height: 100%;
+    width: 100%; 
+    text-align: center;
+    line-height: 230px;    
+}
+
+.photo i {
+	color: transparent;
+				
+}
+
+.photo:hover i {
+	color: black;
+	font-size: 15px;
+	text-align: center;
+	background-color: white;
+	border-radius: 15%;
+	padding: 5px;
+	margin: 3px;
+	
+}
+
+.photo:hover  {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.photo:hover .layer {
+	cursor: pointer;
+	background-color: rgba( 0, 0, 0, 0.5);
+}
+
+.gallery .col-3 {
+	padding: 0;
+	height: 100%;
+}
+
+.gallery .row {
+	height: 230px;
+	overflow: hidden;
+}
+
+/*** WORKS ***/
+
+.works {
+	padding: 10px;
+    background-color: #00CCCC;
+}
+
+.works .col-4>p {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.person {
+    position: relative;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.person img, .person p {
+    border-radius: 50%;
+    background-size: cover;
+    width: 240px;
+    height: 210px;
+}
+
+.person p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 230px;
+    color: #fdfdfd;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.person p:hover {
+    opacity: 1;
+    font-size: 18px;
+}
+
+/*** ICONS ***/
+
+.icons {
+	text-align: center;	
+	background: #66CCCC; 
+	margin: 0;
+	padding: 20px; 	
+}
+
+.icon2:hover{
+	color: #313234;
+	font-size: 40px; 
+	max-width: 150px; 
+}
+
+.icon2 {
+	font-size: 85px;
+    background: #336666;
+    border-radius: 50%;
+    padding: 55px;
+	color: white;
+	-webkit-transition-duration: 0.4s; 
+	cursor: pointer;
+    transition-duration: 0.4s;	     
+    position: absolute; 
+    margin: 0 auto; 
+    left: 0; 
+    right: 0; 
+    max-width: 125px; 
+}	
+
+h2 {
+	margin-top: 185px; 
+	text-size: 40px; 
+}
+/*** AWSOME ***/
+
+.awsome img {
+	width: 462px;
+    height: auto;
+    position: relative;
+    top: -11px;
+	left: -44px;
+	
+}
+.awsome {
+	text-align: center;
+	padding: 20px; 
+}
+.awsome p {
+	color: white;
+	text-align: justify;
+	
+}
+.awsome h3 {
+	font-size: 40px;
+	font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+.awsome {
+	background-image: url(http://powellong.com/data/wallpapers/154/WDF_1951456.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+	color: white;
+}
+
+/*** STATS ***/
+
+.stats {
+	background: #99CCCC;
+	text-align: center; 
+	margin-top: -50px;
+	margin-bottom: -50px;
+}
+
+.stats h1 {
+	font-weight: bold;	
+}
+
+.stats p {
+	text-transform: uppercase;
+	color: #99FFCC;
+	font-weight: 900;	
+}
+
+/*** SOCIAL MEDIA ***/
+
+.social-media {
+	text-align: center;
+	display: block;
+	line-height: 17px;
+	background: #D2D2D2;
+	padding: 2px;
+}
+.social-media ul li {
+	display: inline-block;
+}
+.social-icon{
+	color: white;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 20px;
+	height: 40px;
+    line-height: 40px;
+    width: 40px;
+	background: #222;
+    border-radius: 100%;
+	margin: -3px;
+	transition-duration: 0.4s;   	
+}
+.social-icon:hover {
+	background-color: #fed136;
+}
+.social-icon2{
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	height: 40px;
+    line-height: 40px;
+    width: 40px;
+	background: #222;
+    border-radius: 100%;
+	margin: 5px;
+	transition-duration: 0.4s;   	
+}
+.social-icon2:hover {
+	background-color: #09C;
+}
+.social-media h3 {
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: bold;	
+}
+.social-media p {
+	text-align: justify;
+}
+
+/*** FOOTER ***/
+
+section.footer > .container {
+	margin: 0 auto;
+}
+
+.footer {
+	background: #336666;
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+	margin-bottom : 0px;
+}
+.footer ul li {	
+	display: inline-block;
+	color: #e4b101;
+	padding: 0 10px;
+}
+.footer ul a:hover {
+	text-decoration: underline;
+}
+.footer a {
+	display: inline-block;
+	color: #003333;
+	padding: 0 10px;
+	text-decoration: none;
+}
